@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '24'
       - name: Build & Install
         run: mvn -B install -D skipTests --no-transfer-progress
       - name: Ensure browsers are installed
